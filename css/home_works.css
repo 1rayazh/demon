@@ -1,0 +1,253 @@
+
+/* GMAIL BLOCK */
+
+.gmail_block {
+    padding: 100px 0;
+}
+
+.inner_gmail_block {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid red;
+    height: 300px;
+    border-radius: 20px;
+    align-items: center;
+    animation: lightning 1.5s infinite;
+    box-shadow: 0 0 10px #ff5100;
+}
+
+@keyframes lightning {
+  0%   { box-shadow: 0 0 10px #ff0000; }
+  20%  { box-shadow: 0 0 50px rgba(255, 0, 0, 0.8), 0 0 100px #ff0000; }
+  40%  { box-shadow: 0 0 20px #ff0800; }
+  60%  { box-shadow: 0 0 70px rgba(255, 0, 0, 0.9), 0 0 120px #ff0000; }
+  80%  { box-shadow: 0 0 15px #ff0800; }
+  100% { box-shadow: 0 0 10px #ff0000; }
+}
+
+
+.form_gmail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_gmail button {
+    width: 100%;
+    margin: 20px 0;
+}
+
+
+/* MOVE BLOCK */
+
+.move_block {
+    padding: 100px 0;
+}
+
+.inner_parent_block {
+    height: 400px;
+    width: 400px;
+    border-radius: 18px;
+    background-color: #fff;
+}
+
+.parent_block {
+    height: 500px;
+    width: 500px;
+    border: 1px solid red;
+    position: relative;
+    margin: 0 auto;
+    background-image: url('https://wallpapers.com/images/hd/demon-slayer-tanjiro-form-1kxobeum5ebwv219.jpg');
+    background-position: center;
+    background-size: cover;
+    animation: lightning 1.5s infinite;
+    box-shadow: 0 0 10px #ff5100;
+}
+
+.parent_block :hover{
+    border: 5px solid red;
+}
+
+
+.child_block {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-image: url('https://avatars.mds.yandex.net/i?id=9af8df98ee2747c13fef2d19808007384b7919d9-8201030-images-thumbs&n=13');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inner_move_block {
+    margin-top: 50px;
+}
+
+/*----ANALOG CLOCK-----*/
+
+.clock {
+    --clock-size: 360px;
+    width: var(--clock-size);
+    height: var(--clock-size);
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 50%;
+    color: white;
+}
+
+.spike {
+    position: absolute;
+    width: 8px;
+    height: 1px;
+    background: #fff9;
+    line-height: 20px;
+    transform-origin: 50%;
+    z-index: 5;
+    inset: 0;
+    margin: auto;
+    font-style: normal;
+    transform: rotate(var(--rotate)) translateX(var(--dail-size));
+}
+.spike:nth-child(5n+1) {
+    box-shadow: -7px 0 #fff9;
+}
+.spike:nth-child(5n+1):after {
+    content: attr(data-i);
+    position: absolute;
+    right: 22px;
+    top: -10px;
+    transition: 1s linear;
+    transform: rotate(calc( var(--dRotate) - var(--rotate)));
+}
+
+.seconds {
+    --dRotate: 0deg;
+    --dail-size: calc((var(--clock-size)/ 2) - 8px);
+    font-weight: 800;
+    font-size: 18px;
+    transform: rotate(calc( -1 * var(--dRotate)));
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    transition: 1s linear;
+}
+
+.minutes {
+    --dail-size: calc((var(--clock-size)/ 2) - 65px);
+    font-size: 16px;
+    transform: rotate(calc( -1 * var(--dRotate)));
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    transition: 1s linear;
+}
+
+.stop-anim {
+    transition: 0s linear;
+}
+.stop-anim .spike:after {
+    transition: 0s linear !important;
+}
+
+.hour {
+    font-size: 70px;
+    font-weight: 900;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.minute {
+    font-size: 36px;
+    font-weight: 900;
+    position: absolute;
+    z-index: 10;
+    right: calc(var(--clock-size)/ 4.5);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.minute:after {
+    content: "";
+    position: absolute;
+    border: 2px solid #fff;
+    border-right: none;
+    height: 50px;
+    left: -10px;
+    top: 50%;
+    border-radius: 40px 0 0 40px;
+    width: calc(var(--clock-size)/ 2.75);
+    transform: translatey(-50%);
+}
+
+
+/*-------STOP WATCH------ */
+
+.time {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid var(--orange);
+    margin-top: 40px;
+}
+
+.time_block {
+    display: flex;
+    width: 500px;
+    justify-content: center;
+}
+
+.stopwatch {
+    padding: 100px 0;
+}
+
+.time_buttons {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*--------CHARACTERS---------*/
+
+.characters-list {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.character-card {
+    border: 2px solid var(--orange);
+    padding: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.character-photo {
+    width: 100%;
+    height: 250px;
+    border: 2px solid var(--orange);
+    margin: 0 auto;
+}
+
+.character-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.character-card p {
+  color: white; 
+}

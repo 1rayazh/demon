@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Tanjiro Kamado",
+        "age": "15",
+        "breathingStyle": "Water Breathing",
+        "img": "https://avatars.mds.yandex.net/i?id=1d3ff0ea9c13d03040f2c96208f2952b8700aaca-7053604-images-thumbs&n=13"
+    },
+    {
+        "name": "Inosuke Hashibira",
+        "age": "15",
+        "breathingStyle": "Beast Breathing",
+        "img": "https://avatars.mds.yandex.net/i?id=e25b6f44a2160f6dc8b19353f50913d66a5ef98a-4936013-images-thumbs&n=13"
+    },
+    {
+        "name": "Nezuko Kamado",
+        "age": "14",
+        "trait": "Demon Powers",
+        "img": "https://avatars.mds.yandex.net/i?id=aa80a95c78c0307165094ff96ad00ee7b5707c58-5294324-images-thumbs&n=13"
+    },
+    {
+        "name": "Giyu Tomioka",
+        "age": "21",
+        "breathingStyle": "Water Breathing",
+        "img": "https://avatars.mds.yandex.net/i?id=ba1d20bdde8d1cc3e57f9da1f4b4c2c7a6f9e5dd-12422696-images-thumbs&n=13"
+    },
+    {
+        "name": "Zenitsu Agatsuma",
+        "age": "16",
+        "breathingStyle": "Thunder Breathing",
+        "img": "https://avatars.mds.yandex.net/i?id=97e36d7f4897a282192710611ce8ef60cbb0f92f-4598782-images-thumbs&n=13"
+    }
+]

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Script</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/core.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="bg-video">
+    <source src="/video/IMG_0740.MP4" type="video/mp4">
+    Твой браузер не поддерживает видео.
+    </video>
+
+<div class="wrapper">
+    <div class="header">
+        <div class="container">
+            <div class="inner_header">
+                <a href="index.html">
+                    <div class="logotype">
+                        <h2>Demon Slayer</h2>
+                    </div>
+                </a>
+                <ul class="menu">
+                    <li class="menu_link">
+                        <a href="pages/home_works.html">История</a>
+                    </li>
+                    <li class="menu_link">
+                        <a href="pages/lessons.html">Битвы</a>
+                    </li>
+                    <li class="menu_link">
+                        <a href="pages/cards.html">Персонажи</a>
+                    </li>
+                    <li class="menu_link">
+                        <a href="https://t.me/nurdinbuy16" target="_blank">Send message</a>
+                    </li>
+                </ul>
+                <button class="btn" id="btn-get">Click me!</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main_block">
+        <div class="container">
+            <div class="inner_main">
+                <h1><strong id="js-color">Demon Slayer</strong>- бой во имя семьи.</h1>
+                <div class="colors-buttons">
+                    <button class="btn btn-color">Огонь</button>
+                    <button class="btn btn-color">Ветер</button>
+                    <button class="btn btn-color">Вода</button>
+                    <button class="btn btn-color">Зверь</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider_block">
+        <div class="container">
+            <div class="inner_slider">
+                <div class="slider">
+                    <button class="btn-slide" id="prev">&lt;prev</button>
+                    <div class="slide active_slide">
+                        <div class="slide_card">
+                            <h3>Дыхание Воды</h3>
+                            <p>Спокойное и текучее, как сама вода. Основано на плавных и точных движениях.</p>
+                            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_expressions" target="_blank">Узнать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_card">
+                            <h3>Дыхание Огня </h3>
+                            <p>Мощное и стремительное. Дыхание пламени — разрушительное, а дыхание солнца — прародитель всех стилей.</p>
+                            <a href="https://learn.javascript.ru/recursion" target="_blank">Узнать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_card">
+                            <h3> Дыхание Зверя</h3>
+                            <p>Дикое, инстинктивное и непредсказуемое. Основано на звериных инстинктах.</p>
+                            <a href="https://developer.mozilla.org/ru/docs/Learn/JavaScript/Objects/JSON" target="_blank">Узнать подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_card">
+                            <h3>Дыхание Ветра</h3>
+                            <p>Сокрушающее и вихревое, как буря.</p>
+                            <a href="https://highload.today/kak-ustroen-event-loop-v-javascript-parallelnaya-model-i-tsikl-sobytij/" target="_blank">Узнать подробнее</a>
+                        </div>
+                    </div>
+                    <button class="btn-slide" id="next">next&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottle">
+        <div class="container">
+            <div class="bottle_inner">
+                <a href="pages/monster.html">
+                    <div class="bowl">
+                        <div class="shadow"></div>
+                        <div class="liquid"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_video">
+        <div class="container">
+            <h3>ВИДЕО "КЛИНОК РАССЕКАЮЩИХ ДЕМОНОВ"</h3>
+           <div class="inner_block_video">
+            <iframe 
+                width="80%" 
+                height="450" 
+                src="https://www.youtube.com/embed/vdgXGEYdCRE" 
+                title="YouTube video player" 
+                allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+</div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <a href="https://www.instagram.com/nurdinbuy/" target="_blank">
+                <div class="inner_footer">
+                    <h2>Made by NurDinBuy</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="modal">
+    <div class="modal_dialog">
+        <div class="modal_content">
+            <form action="#">
+                <div class="modal_close">&#10006;</div>
+                <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
+                <label>
+                    <input
+                        required
+                        placeholder="Ваше имя"
+                        name="name"
+                        type="text"
+                        class="modal_input"
+                    >
+                </label>
+                <label>
+                    <input
+                        required
+                        placeholder="Ваш номер телефона"
+                        name="phone"
+                        type="text"
+                        class="modal_input"
+                    >
+                </label>
+                <button class="btn btn_dark btn_min">Перезвонить мне</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/main.js"></script>
+<script src="js/modal.js"></script>
+</html>
+
